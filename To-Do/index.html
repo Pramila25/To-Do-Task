@@ -1,0 +1,63 @@
+<html>
+	<head>
+	
+	<title>To Do</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<style>
+	.link:hover { color:#4c5860; }
+	</style>
+	</head>
+<body>
+<div id="header">
+	<div class="container-fluid" style="margin-bottom: 6px !important;background-color:grey;  background-repeat: no-repeat; background-attachment: fixed;background-size: cover;">
+	<nav class="navbar ">
+	  <div class="container">
+		<div class="collapse navbar-collapse" id="myNavbar">
+		  <ul id="headerlist" class="nav navbar-nav navbar-right" style=" margin-right: -200px !important;">
+			<li><a class="link" style ="font-size: 20px;color:white;" href="view/create-task.html">Create Task</a></li>
+			<li><a  class="link" style ="font-size: 20px;color:white;"  href="view/update-task.html">Modify Task</a></li>
+			<li><a   class="link"  style ="font-size: 20px;color:white;" href="view/completed-task.html">Archived Task</a></li>
+			<li><a   class="link"  style ="font-size: 20px;color:white;" href="incomplete-task.html">To Do Task</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav> 
+	
+	
+	</div>
+</div>
+<div class="jumbotron text-center">
+  <h1>Welcome to task management</h1>
+  <p>Manage and prioritize tasks with ease!!</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <h3>Create a task</h3>
+      <p>To create a task with name, date and description of the task can be added. by default task is added with incomplete status.</p>
+    </div>
+    <div class="col-sm-3">
+      <h3>Modify a task</h3>
+      <p>To update the task</p>
+      <p>The status of the task to be updated after the task is done. Also, any other details of a task can be updated.</p>
+    </div>
+    <div class="col-sm-3">
+      <h3>Archived list of tasks</h3>        
+      <p>Archived task contains all the completed task details</p>
+    </div>
+	 <div class="col-sm-3">
+      <h3>To do task list</h3>        
+      <p>To do task list contains the list of tasks to be done.</p>
+      <p>Also, the task which is expired is indicated with expiry message</p>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

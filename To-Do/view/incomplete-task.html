@@ -1,0 +1,68 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	
+	<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+	
+	<script src="../js/firebase-config.js"></script>
+	<script src="../js/retrieve-task.js"></script>
+	
+	<style>
+	.card-title{
+	font-size:20px;
+	font-weight: bold;
+	}
+	
+.card{
+border: 2px solid grey;
+  border-radius: 10px;
+  margin-bottom:15px;
+}
+.expired{
+color:red;
+font-weight: bold;
+text-align:right;
+padding-right:20px;
+}
+	</style>
+
+</head>
+<body>
+<div id="header">
+	<div class="container-fluid" style="margin-bottom: 6px !important;background-color:grey;  background-repeat: no-repeat; background-attachment: fixed;background-size: cover;">
+	<nav class="navbar ">
+	  <div class="container">
+		<div class="collapse navbar-collapse" id="myNavbar">
+		  <ul id="headerlist" class="nav navbar-nav navbar-right" style=" margin-right: -200px !important;">
+			<li><a class="link" style ="font-size: 20px;color:white;" href="create-task.html">Create Task</a></li>
+			<li><a  class="link" style ="font-size: 20px;color:white;"  href="update-task.html">Modify Task</a></li>
+			<li><a   class="link"  style ="font-size: 20px;color:white;" href="completed-task.html">Archived Task</a></li>
+			<li><a   class="link"  style ="font-size: 20px;color:white;" href="incomplete-task.html">To Do Task</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav> 
+	
+	
+	</div>
+</div>
+<div class="row">
+<div class="col-sm-3 form-group">
+</div>
+<div class="col-sm-6 form-group">
+
+<div id="dynamic-list">
+<!-- To load task list-->
+</div>
+  
+<div class="col-sm-3 form-group">
+</div>
+</div>
+</body>
+</html>
